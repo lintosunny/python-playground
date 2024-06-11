@@ -2,10 +2,6 @@
 # Then it prints a message on the screen asking the user to enter their name. 
 # The program greets the user by name by printing the “Hello,” followed by the user’s name.
 
-# Hello, world!
-# What is your name?
-# Alice
-# Hello, Alice
 
 print('Hello, world!')
 print('What is your name?')
