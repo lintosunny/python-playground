@@ -16,7 +16,7 @@ def switchExample(arg):
         1: "This is case one",
         2: "This is case two"
     }
-    return switcher.get(argument, "nothing")
+    return switcher.get(arg, "nothing")
 
 if __name__ == "__main__":
     arg = 1
