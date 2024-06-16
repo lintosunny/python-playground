@@ -7,4 +7,4 @@
 
 # usecases;
 # 1. implement queues, or stacks as well as graphs
-# 2. lifecycle management of an OS
+# 2. lifecycle management of an OS applications
