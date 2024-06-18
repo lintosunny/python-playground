@@ -169,4 +169,32 @@ llist.remove_node("c")  # Z -> 2 -> a -> b -> d -> e -> 1 -> X -> None
 
 
 
-        
+# Doubly linked list
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None  # reference next node
+        self.previous = None  # reference previous node
+
+
+
+# Circular linked list
+# last node point to head of the list instead on None
+class CircularLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def traverse(self, starting_point=None):
+        if starting_point is None:
+            starting_point = self.head
+        node = starting_point
+        while node is not None and (node.next != starting_point):
+            yield node
+            node = node.next
+        yield node
+
+    def print_list(self, starting_point=None):
+        nodes = []
+        for node in self.traverse(starting_point):
+            nodes.append(str(node))
+        print(" -> ", join(nodes))
