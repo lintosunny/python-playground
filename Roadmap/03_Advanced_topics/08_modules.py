@@ -1,5 +1,8 @@
 # Python module is a python script file that can contain variables, functions, and classes.
 # It is file name appended with .py
+# Module refer to a file containing Python statements and definitions
+# A file containing Python code, for ex: 'example.py', is a module
+# Package is a collection of modules that are organized in a directory hierarchy
 
 # OS module
 #     mkdir(): create new directory
@@ -37,3 +40,10 @@ print ("My name is {}. I am {} years old".format(sys.argv[1], sys.argv[2]))
 #     time.asctime(): returns readable format of local time
 #     time.ctime(): returns string representation of system's current time
 #     time.sleep():  halts current program execution for a specified duration in seconds
+
+
+
+# Custom modules
+# create __init__.py file in folder to consider a folder as package
+# Crate a ex.py file with code, then if you want to use it 
+import ex
